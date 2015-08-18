@@ -1,0 +1,11 @@
+*{
+
+    height: auto;
+}
+.col-md-4{
+    border-color: red 10px;
+    width: 150px;
+    height: 30px;
+    margin: 10px;
+    background-color: silver;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Jquery UI</title>
+        <meta name="description" content="How Jquery Works">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/dark-hive/jquery-ui.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+            <script>
+                    $(document).ready(function(){
+                        $("#sortable").sortable();
+
+                    });
+            </script>
+            <style>
+            #sortable{
+                width: 400px;
+                height: 600px;
+                background-color: black;
+                margin-left: 250px;
+                margin-top: 0px;
+                padding-top: 20px;
+            }
+
+            h1{
+                color: silver;
+                width: 420px;
+                background-color: black;
+                margin-left: 250px;
+                margin-bottom: 0px;
+                text-align: center;
+                padding: 10px;
+            }
+            </style>
+    </head>
+<body>
+<h1>Sort the Images!</h1>
+<ul id="sortable">
+  <li><img src="sort1.png"></li>
+  <li><img src="sort2.png"></li>
+  <li><img src="sort3.png"></li>
+  <li><img src="sort4.png"></li>
+  <li><img src="sort5.png"></li>
+</ul>
+
+<script>$("#sortable").sortable();</script>
+
+</body>
+</html>

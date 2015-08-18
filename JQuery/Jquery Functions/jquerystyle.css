@@ -1,0 +1,27 @@
+#container{
+    width: 970px;
+    height: auto;
+    background-image: linear-gradient(to bottom, #bfd0db, #8847B2);
+    text-align: center;
+    margin-left: 210px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 3px solid black;
+}
+
+button{
+    background-image: linear-gradient(to bottom, #bfd0db, #303538);
+    border-radius: 4px;
+    text-shadow: 2px 1px 3px #666666;
+    box-shadow: 0px 1px 3px #666666;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px 20px 10px 20px;
+    border: solid #586066 2px;
+    text-decoration: none;
+}
+
+.selector {
+    color: red;
+}

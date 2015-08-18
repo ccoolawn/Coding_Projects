@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Survey</title>
+        <meta name="description" content="How Advanced PHP Works">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+    </script>
+    </head>
+    <body>
+        <div class='container'>
+            <div class = 'form'>
+                <form action='process.php' method='post'>
+                    <p>Your Name:</p><input type='text' name='your_name'><br>
+                    <p>Dojo Location: </p>
+                        <select name='location'>
+                            <option value ="seattle">Seattle</option>
+                            <option value ="san francisco">San Francisco</option>
+                            <option value ="los angeles">Los Angeles</option>
+                        </select><br>
+                    <p>Favorite Language: </p>
+                        <select name='language'>
+                            <option value ="Javascript">Javascript</option>
+                            <option value ="PHP">PHP</option>
+                            <option value ="Ruby">Ruby</option>
+                        </select><br>
+                    <p>Comment (optional):</p><br><textarea name='comment'></textarea><br>
+                    <input type='submit' value='Submit'>
+                </form>
+            <!-- <form action="search.php" method="get">
+                <input type="text" name="search_query">
+                <input type="submit" value="Search">
+            </form> -->
+            </div>
+        </div>
+    </body>
+</html>

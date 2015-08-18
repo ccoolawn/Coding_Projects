@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8"/>
+                <title>Changing Guitars</title>
+                <meta name="description" content="Changing Guitars">
+                <link rel="stylesheet" type="text/css" href="styles.css">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+                <script type="text/javascript">
+                        $(document).ready(function(){
+
+                            $('#guitar0').hover(function() {
+                            $('#guitar0 img').animate({ opacity: 0 }, 'slow');
+                            }, function() {
+                            $('#guitar0 img').animate({ opacity: 1 }, 'slow');
+                            });
+
+                            $('#guitar1').hover(function() {
+                            $('#guitar1 img').animate({ opacity: 0 }, 'slow');
+                            }, function() {
+                            $('#guitar1 img').animate({ opacity: 1 }, 'slow');
+                            });
+
+                            $('#guitar2').hover(function() {
+                            $('#guitar2 img').animate({ opacity: 0 }, 'slow');
+                            }, function() {
+                            $('#guitar2 img').animate({ opacity: 1 }, 'slow');
+                            });
+
+                            $('#guitar3').hover(function() {
+                            $('#guitar3 img').animate({ opacity: 0 }, 'slow');
+                            }, function() {
+                            $('#guitar3 img').animate({ opacity: 1 }, 'slow');
+                            });
+
+
+                    });
+
+                </script>
+        </head>
+        <body>
+            <div id="container">
+                <h1>Change The  Color of the Guitars</h1>
+                <br>
+                <div id='guitar0' style="background-image:  url(oceanblue.jpg); height:100px; width: 286px;"><img src='3-color sunburst.jpg' alt="Strat1" style="opacity: 1"/></div>
+                <br>
+                <div id='guitar1' style="background-image:  url(olympicwhite.jpg); height:100px; width: 286px;"><img src='black.jpg' alt="Strat2" style="opacity: 1"/></div>
+                <br>
+                <div id='guitar2' style="background-image:  url(shorelinegold.jpg); height:100px; width: 286px;"><img src='bodeaux.jpg' alt="Strat3" style="opacity: 1"/></div>
+                <br>
+                <div id='guitar3' style="background-image:  url(siennasunburst.jpg); height:100px; width: 286px;"><img src='mysticblue.jpg' alt="Strat3" style="opacity: 1"/></div>
+                <br>
+            </div>
+        </body>

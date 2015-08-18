@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8"/>
+            <title>Disappering Images</title>
+            <meta name="description" content="Using JQuery to hide images">
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+            <script type="text/javascript">
+
+                        $(document).ready(function(){
+
+                            $('#strat1').click(function(){
+                            $(this).fadeOut('slow', function() {
+
+                                })
+                            })
+
+                           $('#strat2').click(function(){
+                           $(this).fadeOut('slow', function() {
+                              })
+                           })
+
+                          $('#strat3').click(function(){
+                           $(this).fadeOut('slow', function() {
+                              })
+                           })
+
+                          $('#strat4').click(function(){
+                           $(this).fadeOut('slow', function() {
+                              })
+                           })
+
+                          $('#strat5').click(function(){
+                           $(this).fadeOut('slow', function() {
+                              })
+                           })
+
+                          $('#strat6').click(function(){
+                           $(this).fadeOut('slow', function() {
+                              })
+                           })
+
+                          $('#strat7').click(function(){
+                           $(this).fadeOut('slow', function() {
+                              })
+                           })
+
+                          $('#strat8').click(function(){
+                           $(this).fadeOut('slow', function() {
+                              })
+                           })
+
+                          $('#restBttn').click(function(){
+                           $('img').fadeIn('fast', function() {
+                             })
+                           })
+                        });
+
+            </script>
+    </head>
+<body>
+        <div id="container">
+            <h1>Hide The Strat</h1>
+            <button id="restBttn">Restore</button>
+            <br>
+                        <img id="strat1" src="Fender Select Strat.jpg">
+                        <img id="strat2" src="Fender Select Strat.jpg">
+                        <img id="strat3" src="Fender Select Strat.jpg">
+                        <img id="strat4" src="Fender Select Strat.jpg">
+                        <img id="strat5" src="Fender Select Strat.jpg">
+                        <img id="strat6" src="Fender Select Strat.jpg">
+                        <img id="strat7" src="Fender Select Strat.jpg">
+                        <img id="strat8" src="Fender Select Strat.jpg">
+            <br>
+       </div>
+</body>
+
+</html>

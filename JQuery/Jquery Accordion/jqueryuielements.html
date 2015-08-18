@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Jquery Elements</title>
+        <meta name="description" content="How Jquery Works">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/pepper-grinder/jquery-ui.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+            <script>
+                        $(document).ready(function(){
+                               $( "#datepicker" ).datepicker({
+                                  numberOfMonths: 3,
+                                  showButtonPanel: true
+                                });
+
+                        $(function() {
+                                $( "#accordion" ).accordion();
+                                });
+                 });
+            </script>
+            <style>
+
+                    ul li{
+                        display: inline-block;
+                    }
+                    #accordion{
+                        width: 500px;
+                        height: 500px;
+                        display: inline-block;
+                    }
+
+                    #datepicker1{
+                        float: right;
+                    }
+
+                    #container{
+                        padding: 25px;
+                        background-color: #472400;
+                        background: url("striped_lens.png");
+
+                    }
+            </style>
+    </head>
+    <body>
+        <div id="container">
+                <div id="header">
+
+                </div>
+                <div id="accordion">
+                      <h3>About Us</h3>
+                      <div>
+                        <p>
+                        Bacon sirloin chicken tongue chuck strip steak beef meatloaf turkey shankle
+                        andouille pancetta. Ham salami pastrami flank ball tip. Bresaola boudin ribeye
+                        pastrami chicken tongue jowl drumstick t-bone frankfurter rump tenderloin
+                        venison shank bacon. Corned beef turkey pig leberkas boudin.
+                        </p>
+                      </div>
+                      <h3>A Little More!</h3>
+                      <div>
+                        <p>
+                        Shoulder pastrami ham hock venison, pancetta fatback prosciutto tail alcatra
+                        meatball. Capicola cupim hamburger, strip steak beef shankle corned beef.
+                        Porchetta beef brisket fatback flank filet mignon meatloaf tongue alcatra
+                        bresaola ham jowl andouille ribeye sirloin. Corned beef pork chop shoulder
+                        kevin pastrami fatback turducken doner beef ribs. Pork biltong meatloaf, cow
+                        filet mignon leberkas tri-tip spare ribs meatball brisket swine shankle ball tip
+                        boudin jowl. Shoulder bacon turkey strip steak chuck spare ribs pork frankfurter
+                        meatball landjaeger doner short ribs venison turducken.
+                        </p>
+                      </div>
+                      <h3>We really Love Bacon!!</h3>
+                      <div>
+                        <p>
+                        Bacon ipsum dolor amet strip steak turkey t-bone, prosciutto ribeye shankle
+                        pork chop boudin biltong. Turducken turkey bacon pastrami. Beef ribs
+                        porchetta filet mignon shank, jerky cow kielbasa cupim rump prosciutto
+                        landjaeger sirloin jowl salami. Short ribs ribeye flank cupim, t-bone pig
+                        shoulder fatback leberkas meatball ball tip boudin sausage filet mignon. Tail
+                        rump corned beef hamburger jowl t-bone cupim kielbasa. Cupim landjaeger corned beef,
+                        chuck pork chop kielbasa strip steak. Brisket cow short ribs corned beef venison jowl sirloin
+                        prosciutto.
+                        </p>
+                        <ul>
+                          <li><img src="baconheart.jpg"></li>
+                          <li><img src="BaconTower.jpg"></li>
+                          <li><img src="Kevin-Bacon.jpg"></li>
+                        </ul>
+                      </div>
+                      <h3>And Cake Too!!!!</h3>
+                      <div>
+                        <p>
+                        Cupcake ipsum dolor sit amet bonbon croissant wafer jelly. Cheesecake pastry dessert marzipan
+                        oat cake jelly gingerbread. Chupa chups tart halvah sweet roll sweet cake pastry. Biscuit toffee
+                        tootsie roll bear claw liquorice bonbon icing. Dragée oat cake liquorice brownie. Muffin dragée
+                        carrot cake chocolate donut soufflé macaroon. Gingerbread macaroon bonbon. Biscuit oat cake
+                        chupa chups halvah fruitcake. Sweet roll topping toffee caramels tootsie roll marshmallow
+                        fruitcake tiramisu. Cheesecake gingerbread fruitcake ice cream. Toffee pudding gummi bears
+                        liquorice. Dragée jelly candy. Sweet donut cake jelly beans lemon drops lemon drops dragée chocolate lollipop.
+                        </p>
+                        <p>
+                        Topping carrot cake bonbon soufflé candy carrot cake gummies. Muffin gingerbread cotton candy jelly
+                        beans icing chocolate cake topping candy canes caramels. Bonbon powder cotton candy gingerbread
+                        jujubes chocolate bar. Candy canes gingerbread lemon drops carrot cake danish tart halvah brownie
+                        liquorice. Cookie tart gingerbread pie jelly gummi bears tart topping jelly. Chocolate cake ice cream cake
+                        carrot cake dragée chocolate bar powder. Cake macaroon donut bonbon cookie cupcake dragée powder
+                        toffee. Chocolate cake biscuit gummi bears. Marshmallow cotton candy croissant pastry marshmallow.
+                        Croissant dessert donut macaroon croissant oat cake sugar plum. Ice cream cake pie chocolate bar oat
+                        cake tootsie roll bonbon cheesecake. Toffee cupcake candy halvah chocolate cake tart. Chocolate bar
+                        soufflé gummies cotton candy candy canes candy. Bonbon topping chocolate soufflé.
+                        </p>
+                      </div>
+                </div>
+                <div id="datepicker1">
+                    <p>Date: <input type="text" id="datepicker"></p>
+                </div>
+        </div>
+    </body>
+</html>

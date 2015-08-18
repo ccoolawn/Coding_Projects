@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('#toggle').click(function(){
+			$(".pulldown").slideToggle("slow")
+		}); 
+
+		$('#addClassbutton').click(function(){
+			$("#p1").addClass("selector")
+		});
+
+		$('#Afterbutton').click(function(){
+			$('#Afterbutton').after("after")
+		});
+
+		$('#Beforebutton').click(function(){
+			$('#Beforebutton').before("before")
+		});
+
+		$('#slideUp').click(function(){
+			$('#spoiler').slideUp(800)
+		});
+
+		$('#slideDown').click(function(){
+			$('#spoiler').slideDown(800)
+		});
+
+		$('#appendlist').click(function(){
+			$('#todolist').append("<li>code code code!</li>") 
+		});
+
+		$('#htmlbutton').click(function(){
+			$('#htmlme').html("<b>Surprise!</b>")
+		});
+
+		$('#textbttn').click(function(){
+			$('#textme').text('Suprise!')
+		});
+
+		$('#returnval').click(function(){
+			alert($("input:text").val());
+		});
+
+		$('#setval').click(function(){
+			$("input:text").val("Ta-da");
+		});
+
+		$('#hide').click(function(){
+			$('#Hideshow').hide();
+		});
+
+		$('#show').click(function(){
+			$('#Hideshow').show();
+		});
+
+		$('#fadeIn').click(function(){
+			$('#Hideshow').fadeIn();
+		});
+
+		$('#fadeOut').click(function(){
+			$('#Hideshow').fadeOut();
+		});
+
+		$('#inputme').click(function(){
+			alert("Hello!").focus();
+		});
+
+		$('#bttn1').click(function(){
+			alert("The image height is: " + $('img').attr("height"));
+		});
+
+		$('#bttn2').click(function(){
+			$('img').attr("width",function(n, v){
+				return v - 10;
+			});
+		});
+
+
+
+
+
+	});
+	
+</script>
+
+	<title>JQuery practice</title>
+</head>
+<body>
+	<div id="wrapper">
+		<h1>SlideToggle</h1>
+			<button id="toggle">Toggle me!</button> 
+				<p>Toggles a pulldown of the entire website!</p>
+	<hr class="pulldown">
+		<h1 class="pulldown">Add Class</h1>	
+			<button class="pulldown" id="addClassbutton">Add class</button>	
+				<p class="pulldown" id="p1">Push the button to change the color of this font to red!</p>
+	<hr class="pulldown">			
+		<h1 class="pulldown">Before and After</h1>
+			<button class="pulldown" id="Beforebutton">before</button>
+			<button class="pulldown" id="Afterbutton">after</button>
+				<p class="pulldown">These buttons add text before and after each button!</p>
+	<hr class="pulldown">
+		<h1 class="pulldown">slideDown and slideDown</h1>
+			<button class="pulldown" id="slideDown">Slidedown</button>
+			<button class="pulldown" id="slideUp">Slideup</button>
+			<p class="pulldown">Study Queston: What is the greatest place on earth?</p>	
+			<p class="pulldown" id="spoiler">Washington State</p>
+	<hr class="pulldown">
+		<h1 class="pulldown">Append</h1>	
+			<ul class="pulldown" id="todolist">
+				<li>Get Dressed</li>
+				<li>Brush teeth</li>
+				<li>Eat Breakfast</li>
+				<li>Workout</li>
+			</ul>	
+				<button class="pulldown" id="appendlist">Add to-do list</button>
+	<hr class="pulldown">
+		<h1 class="pulldown">.HTML</h1>
+			<p class="pulldown" id="htmlme">The html method allows you to change the text content of an element with the addition of using html methods.</p>
+				<button class="pulldown" id="htmlbutton">change the content of this paragraph!</button> 
+	<hr class="pulldown">
+		<h1 class="pulldown">.text</h1>
+			<p class="pulldown" id="textme">.text method is essentially the same as the .html method. The difference being is that the .text method does not allow you to use any sort of .html methods.</p>
+				<button class="pulldown" id="textbttn"> Click to change the text of the p element.</button>
+	<hr class="pulldown">
+		<h1 class="pulldown">.val</h1>
+			<p class="pulldown" id="val">The .val method allows one to return value attributes from the first matched element. It also allows one to set the value attribute using a function. This particular function is very useful for the "input" method. </p>		
+		<h2 class="pulldown">Returning the value of the first matched element</h2>	
+			<input class="pulldown" type="text" name="Address" value="address">
+			<input class="pulldown" type="text" name="Phone number" value="phone number">	
+			<input class="pulldown" type="text" name="Birthdate" value="birthday">
+			<button class="pulldown" id="returnval">Click to see value of the first element</button>
+			<button class="pulldown" id="setval">Click to set the value of the first input to "val method"</button>
+	<hr class="pulldown">
+		<h1 class="pulldwn">.hide .show .fadeOut .fadeIn</h1>
+			<p class="pulldown" id="Hideshow"> The .hide and .show methods hide and shows elements. It can be useful for thing such as online study tools. The fadeOut and fadeIn are very similar to the .hide .show method and dunction essentially the same. </p>
+			<button class="pulldown" id="hide">Click to hide the paragraph</button>
+			<button class="pulldown" id="show">Click to show the paragraph!</button>
+			<button class="pulldown" id="fadeIn">Fade in</button>
+			<button class="pulldown" id="fadeOut">Fade Out</button>
+	<hr class="pulldown">
+		<h1 class="pulldown">.focus</h1>
+			<p class="pulldown" id="focus"> The focus event occurs when the element gets clicked on, as in the element is clicked on. It is often used on different forms</p>
+			<p> click the input box to focus it and trigger an alert!</p>
+			<input id="inputme">  
+	<hr class="pulldown">
+		<h1 class="pulldown" id="attr">.attr</h1>
+			<p class="pulldown" id="p1"> The .attr method allows you to pull values from an element. It also can set values to an element.<p>
+				<img src="https://s-media-cache-ak0.pinimg.com/736x/23/c5/b9/23c5b933cf6025336d42d1cbfda88822.jpg" class="pulldown" alt="beastmode" width="300" height="200">
+				<button class="pulldown" id="bttn1">Click to the height of the image!</button>
+				<button class="pulldown" id="bttn2">Click to resize the image!</button>
+
+
+
+					
+
+
+
+						
+			
+
+
+
+
+
+
+
+
+
+	</div>		
+</body>
+</html>	

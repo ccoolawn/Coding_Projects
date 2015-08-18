@@ -1,0 +1,29 @@
+
+#container{
+    width: 800px;
+    height: auto;
+    padding: 10px;
+    background-image: -webkit-linear-gradient(#FFFFFF, silver);
+    background-image: -o-linear-gradient(#FFFFFF,silver);
+    background-image: linear-gradient(#FFFFFF, silver);
+}
+
+#table {
+    border-color: solid black 1px;
+    display: table-header-group;
+    text-align: center;
+
+}
+
+thead{
+    display: table-row-group;
+}
+
+td, th{
+    display: table-cell;
+    padding: 6px;
+}
+
+input{
+    margin: 6px;
+}

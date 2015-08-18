@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Jquery Functions</title>
+        <meta name="description" content="How Jquery Works">
+        <link rel="stylesheet" type="text/css" href="jquerystyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript">
+            $(document).ready(function(){
+
+
+                  $("#up").slideUp();
+                  $("#toggleBttn").click(function(){
+                      $(".open").slideToggle("slow")
+                  });
+
+                  $("#fadeinBttn").click(function(){
+                      $(".open").fadeIn("slow")
+                  });
+
+                  $("#fadeoutBttn").click(function(){
+                      $(".open").fadeOut("slow")
+                  });
+
+                 $("#addclassbttn").click(function(){
+                      $('#AddClass').addClass('selector')
+                 });
+
+                 $("#rmclassbttn").click(function(){
+                      $('#AddClass').removeClass('selector')
+                 });
+
+                 $('#appbuttn').click(function(){
+                      $('#append').append('I will append this !')
+                 });
+
+                 $("#beforeBttn").click(function(){
+                      $("#beforeBttn").before(" Before ? ")
+                 });
+
+                 $("#afterBttn").click(function(){
+                      $("#afterBttn").after("or After ? ")
+                 });
+
+                 $("#downBttn").click(function(){
+                      $("#up").slideDown(800)
+                 });
+
+                 $("#upBttn").click(function(){
+                      $("#up").slideUp( 800)
+                 });
+                 $("#htmlBttn").click(function(){
+                      $("#htmle").html("Stagger Lee !?!?!?!?!")
+                 });
+
+          });
+    </script>
+    </head>
+    <body>
+            <div id="container">
+                  <h1>Slidetoggle</h1>
+                        <button id="fadeinBttn">Fade In</button>
+                        <button id="toggleBttn">Slidetoggle</button>
+                        <button id="fadeoutBttn">Fade Out</button>
+                                    <p>Click the buttons to toggle site open or closed. Or use the fade buttons to watch it open & close in a differnt way.</p>
+            <hr class="open">
+                  <h1 class="open">AddClass</h1>
+                        <button class="open" id="addclassbttn">AddClass</button>
+                        <button class="open" id="rmclassbttn">RemoveClass</button>
+                                    <p class="open" id='AddClass'>Click the button to add class 'red' to this paragraph</p>
+            <hr class="open">
+                   <h1 class="open">Append</h1>
+                        <button class="open" id="appbuttn">Append</button>
+                                    <p class="open" id="append">Click the button to append a new paragraph!</p>
+            <hr class="open">
+                  <h1 class="open">Before & After</h1>
+                        <button class="open" id="beforeBttn"> Before </button>
+                        <button class="open" id="afterBttn"> After </button>
+                                    <p class="open" id="before">Before!</p>
+                                    <p class="open" id="after">After!!</p>
+            <hr class="open">
+                  <h1 class="open">Up & Down</h1>
+                        <button class="open" id="downBttn">Slide Down</button>
+                        <button class="open" id="upBttn">Slide Up</button>
+                                    <p class="open">How many people can Tiger Stadium seat?</p>
+                                    <h1 class="open" style= "color:silver" id="up">102,321</h1>
+                                    <img class="open" id="up" src="tiger-stadium-lsu.jpg" alt="Tiger Stadium">
+            <hr class="open">
+                  <h1 class="open" style="color: white">.HTML</h1>
+                        <button class="open" id="htmlBttn">Content Change</button>
+                                    <p class="open" id="htmle" style="color: white">The html method allows you to change the text content of an element with the addition of using html methods. Is it me?</p>
+
+            </div>
+    </body>

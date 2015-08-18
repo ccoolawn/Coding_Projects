@@ -1,0 +1,30 @@
+#container{
+    width: 800px;
+    height: auto;
+    padding: 10px;
+    background-image: -webkit-linear-gradient(#FFFFFF, #9999C2);
+    background-image: -o-linear-gradient(#FFFFFF, #9999C2);
+    background-image: linear-gradient(#FFFFFF, #9999C2);
+}
+
+#form1{
+    width: 400px;
+}
+
+        .description{
+            height: 200px;
+            width: 350px;
+        }
+
+        .bttn{
+            background-image: background-image: background-image: -webkit-linear-gradient(#bfd0db, #303538);
+            background-image: background-image: background-image: -o-linear-gradient(#bfd0db, #303538);
+            background-image: background-image: background-image: linear-gradient(#bfd0db, #303538);
+            border-radius: 5px;
+            color: black;
+        }
+
+#card{
+    background-color: black;
+    color: silver;
+}

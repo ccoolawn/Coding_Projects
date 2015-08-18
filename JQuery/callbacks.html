@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Jquery Functions</title>
+        <meta name="description" content="How Jquery Works">
+        <link rel="stylesheet" type="text/css" href="jquerystyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+
+            function attach_h3_handlers(){
+                $('h3').click(function(){alert('you clicked me!');});
+            };
+
+            $(document).ready(function(){
+
+            $('h3').click(function(){alert('you clicked me!')});
+                $('button').click(function(){
+                    $('div').append('<h3>I am a dynamically generated h3 </h3>');
+                        attach_h3_handlers();
+        });
+
+    });
+    </script>
+    </head>
+    <body>
+        <div>
+            <button>Click me to add a new h3 tag!</button>
+            <h3> click me to see a message! </h3>
+        </div>
+    </body>

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Jquery Traversing</title>
+        <meta name="description" content="How Jquery Works">
+        <link rel="stylesheet" type="text/css" href="jquerystyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+
+            $(document).ready(function(){
+                         $('button').click(function(){
+                         $(this).siblings().children().children().text('Michael Choi was here!');
+                     })
+                    //     $('h3, p').click(function(){
+                    //     // $(this).parent().append('<h2>HOWDY CODING DOJO!</h2>');
+                    //     $(this).siblings().hide();
+                    // })
+
+            // $('#myDiv').children().css('background-color', 'green');
+            // $('#myDiv').children('h3').css('background-color', 'green');
+
+    });
+    </script>
+    </head>
+    <body>
+        <!-- <div id='myDiv'>
+            <p>Here is a paragraph.  It is a beautiful paragraph.</p>
+            <h3>Michael Choi</h3>
+            <h3>John Supsupin</h3>
+            <h3>Trey Villafane</h3>
+        </div> -->
+    <div>
+    <button>Click me for crazy things!</button>
+        <ul>
+            <li><h3>Tiger Woods</h3></li>
+            <li><h3>Phil Mickelson</h3></li>
+            <li><h3>Ben Hogan</h3></li>
+            <li><h3>Jack Nicklaus</h3></li>
+            <li><h3>Gary Player</h3></li>
+            <li><h3>Rory Mcilroy</h3></li>
+        </ul>
+ </div>
+    </body>

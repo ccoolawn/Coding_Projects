@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+            <meta charset="utf-8"/>
+            <title>Contact Card</title>
+            <meta name="description" content="Using JQuery to add Contact Card">
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script type="text/javascript">
+
+                    $(document).ready(function(){
+                        $('form').submit(function(){
+                            var firstname= $('.firstname').val()
+                            var lastname= $('.lastname').val()
+                            var decription= $('.description').val()
+
+                            $('#cards').append('<div id' + firstname + '</td><td>' + lastname + '</td><td>' + decription + '</td><tr>');
+                            // the following line is used if you want to remove the previous values in the form
+                            //$('input:text').val('');
+                            return false
+                        })
+                    });
+            </script>
+    </head>
+    <body>
+        <div id='container'>
+        <h1>Contact Card</h1>
+        <hr>
+        <div id='form1'>
+            <form>
+                    First name: <input type="text" class='firstname' placeholder="firstname"><br>
+                    Last name: <input type="text" class='lastname' placeholder="lastname"><br>
+                    Description: <br><textarea type="text" class='description' placeholder="description"></textarea><br>
+                    <br>
+                    <input class='bttn' type='submit' value='Add User'>
+            </form>
+        </div>
+        <div id='cards' cl>
+
+        </div>
+        </div>
+    </body>
