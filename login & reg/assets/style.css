@@ -1,0 +1,98 @@
+.front{
+    background-color: gray;
+}
+
+.header{
+    width: 850px;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    margin: auto ;
+    margin-top: 20px;
+}
+
+
+
+.form{
+    width: 775px;
+    height: auto;
+    display: inline-block;
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    margin-left: 20px ;
+}
+
+    .posts{
+        min-width: 740px;
+    }
+
+.form2{
+    width: 200px;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    margin-left: 500px ;
+    margin-top: 20px;
+
+}
+
+
+    h1, h3{
+        font-family: sans-serif;
+
+    }
+
+    .title, h1{
+        display: inline-block;
+    }
+
+    h2{
+        font-family: sans-serif;
+        display: inline-block;
+    }
+
+.btn{
+    margin-top: 15px;
+    background: #3498db;
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    border-radius: 5px;
+    text-shadow: 1px 1px 3px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+}
+
+.sucbox{
+    background-color: green;
+    color:white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    width: 600px;
+    height:auto;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.actbox{
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    width: 900px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px
+}
+
+.scroll{
+    overflow: scroll;
+    height: 100px;
+    font-size: 25px;
+}
